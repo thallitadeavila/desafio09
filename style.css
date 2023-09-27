@@ -1,0 +1,276 @@
+html {
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #222222;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+    background-color: #222222;
+}
+
+.header_logo {
+    width: 8em;
+    height: auto;
+}
+
+#hamburguer {
+    background-color: #F8E217;
+    color: #222222;
+    display: block;
+    text-align: center;
+    padding: .3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.header-nav {
+    background-color: #222222;
+    display: none;
+}
+
+.header-nav.show {
+    display: block;
+}
+
+ul {
+    margin: 0;
+}
+
+.header-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.header-nav a {
+    color: #F8E217;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header-nav a:hover {
+    background-color: color-mix(in srgb, #F8E217, #FFFFFF 50%);
+    color: #222222;
+}
+
+#home {
+    background-color: #F8E217;
+    color: #222222;
+    display: block;
+    align-items: center;
+    padding: .3em;
+    font-size: 2em;
+    margin: auto;
+    border-radius: 8px;
+}
+
+#home a {
+    color: #222222;
+    text-decoration: none;
+}
+
+#home a:hover {
+    background-color: #F8E217;
+    color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.imagem-fundo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: auto;
+    height: 100vh;
+}
+
+#galeria {
+    width: 62em;
+    margin-top: 12em;
+    margin-left: 10em;
+}
+
+.galeria_botao {
+    background-color: #F8E217;
+    color: #222222;
+    align-items: center;
+    font-size: 1.5em;
+    width: auto;
+    margin: auto;
+    padding: .5em;
+    letter-spacing: .2em;
+    border-radius: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.galeria_botao a {
+    color: #F8E217;
+}
+
+.galeria_botao:hover {
+    background-color: #F8E217;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width: 48em) {
+    #hamburguer {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #222222;
+    }
+
+    .header_logo {
+        margin-left: 2em;
+    }
+
+    .header-nav {
+        display: block;
+    }
+
+    .header-nav ul {
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header-nav li {
+        display: inline-block;
+    }
+
+    .header-nav a {
+        border-radius: 5px;
+    }
+
+    .header-nav a:hover {
+        background-color: #F8E217;
+        color: #FFFFFF;
+    }
+
+    .imagem-fundo {
+        background-image: url('imagens/cavaleiros.jpg');
+    }
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    min-height: 100vh;
+}
+
+@media screen and (max-width: 47.99em) {
+
+    h1,h2,h3,p {
+        font-size: 1.5em;
+    }
+
+    .imagem-fundo {
+        background-image: url('imagens/cavaleiros_mobile.jpg');
+        }
+    }
+
+    .galeria_botao {
+        width: auto;
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .carousel-inner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .carousel {
+        min-height: 50vh;
+    }
+
+    .div-audio {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    audio {
+        width: 300px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.div-audio {
+    width: 300px;
+    margin: 0 auto;
+}
+
+audio {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #222222;
+    color: #F8E217;
+    padding: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    flex-direction: row;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 47.99em) {
+    .social-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}

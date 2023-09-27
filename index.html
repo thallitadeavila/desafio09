@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/atena.png" type="image/x-icon">
+    <title>.:: THALLITA - AULA 14 ::.</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="imagens/logo.png" alt="" class="header_logo">
+
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header-nav">
+            <ul>
+                <li><a href="https://www.cavzodiaco.com.br/personagens/cavaleiros-de-atena/cavaleiros-de-bronze/serie-classica"
+                        target="_blank">Cavaleiros de Bronze</a></li>
+                <li><a href="https://www.cavzodiaco.com.br/personagens/cavaleiros-de-atena/cavaleiros-de-prata/serie-classica"
+                        target="_blank">Cavaleiros de Prata</a></li>
+                <li><a href="https://www.cavzodiaco.com.br/personagens/cavaleiros-de-atena/cavaleiros-de-ouro/serie-classica"
+                        target="_blank">Cavaleiros de Ouro</a></li>
+                <li><a href="https://www.cavzodiaco.com.br/personagens/deuses/serie-classica" target="_blank">Saori Kido
+                        (Atena)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="imagem-fundo">
+        <img src="" alt="">
+        <section id="galeria">
+            <a href="galeria.html" target="_blank" class="galeria_botao">Galeria</a>
+        </section>
+    </main>
+
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itensMenu = document.getElementById('itens_menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer() {
+            if (itensMenu.style.display == 'block') {
+                itensMenu.classList.remove('show');
+            } else {
+                itensMenu.classList.toggle('show');
+            }
+        }
+    </script>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/thallitadeavila" target="_blank"><img src="imagens/facebook-icon.png"
+                    alt="Facebook"></a>
+            <a href="https://www.instagram.com/thallitadeavila" target="_blank"><img src="imagens/instagram-icon.png"
+                    alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/thallitadeavila" target="_blank"><img src="imagens/linkedin-icon.png"
+                    alt="LinkedIn"></a>
+            <a href="hhttps://github.com/thallitadeavila" target="_blank"><img src="imagens/github-icon.png"
+                    alt="GitHub"></a>
+        </div>
+        <br>
+        ©2023 Thallita de Ávila
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>
